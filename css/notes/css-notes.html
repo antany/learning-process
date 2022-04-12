@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS Cheatsheet</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css-notes.css'>
+</head>
+<body>
+    <main>
+        <section>
+            <H1 class="page-title">CSS Cheatsheet</H1>
+        </section>
+    </main>
+    <article class="chapters">
+        <section class="topic">
+            <h2>Adding CSS to HTML</h2>
+            <div class="notes">
+                        <article class="note">
+                            <section class="header">
+                                    Inline
+                            </section>
+                            <section class="code">
+                                <p>
+                                    &lt;div style="background:red"&gt;Some content&lt;/div&gt;
+                                </p>
+                            </section>
+                            <section  class="example">
+                            </section>
+                            <section  class="description">
+                            </section>
+                        </article>
+
+                        <article class="note">
+                            <section class="header">
+                                Using &lt;style&gt; Tag
+                            </section>
+                            <section class="code">
+                                <p>
+                                &lt;head&gt;
+                                    &lt;style&gt;
+                                        .sample{
+
+                                        } 
+                                    &lt;/style&gt;
+                                &lt;/head&gt;
+                                </p>       
+                            </section>
+                            <section  class="example">
+                            </section>
+                            <section  class="description">
+                                .sample is selector, Not Recommended!
+                            </section>
+                        </article>
+
+                        <article class="note">
+                            <section class="header">
+                                    Link to CSS file
+                            </section>
+                            <section class="code">
+                                <p>
+                                    &lt;link rel='stylesheet' type='text/css' href='css-notes.css'&gt;
+                                </p>
+                            </section>
+                            <section  class="example">
+                            </section>
+                            <section  class="description">
+                                Recommended Way .content of external .css file and style tag will follow the same syntax
+                            </section>
+                        </article>
+            </div>
+            <div class="references"></div>
+        </section>
+        <section class="topic">
+            <h2>Importing External Fonts</h2>
+            <div class="notes">
+                        <article class="note">
+                            <section class="header">
+                                    Import Fonts - CSS
+                            </section>
+                            <section class="code">
+                                <p>
+                                    @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap');
+                                </p>
+                            </section>
+                            <section  class="example">
+                            </section>
+                            <section  class="description">
+                                can be used in CSS like "font-family: 'Antonio',sans-serif;"
+
+                                sans-serif - default to browser default sans-serif font
+                            </section>
+                        </article>
+                        <article class="note">
+                            <section class="header">
+                                    Import Fonts - Header Link Tag
+                            </section>
+                            <section class="code">
+                                <p>
+                                    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+                                    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+                                    &lt;link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet"&gt;
+                                </p>
+                            </section>
+                            <section  class="example">
+                            </section>
+                            <section  class="description">
+                                can be used in CSS like "font-family: 'Antonio',sans-serif;"
+
+                                sans-serif - default to browser default sans-serif font
+                            </section>
+                        </article>
+
+            </div>
+            <div class="references"></div>
+        </section>
+        <section class="topic">
+            <h2>Selectors</h2>
+            <div class="notes">
+                        <article class="note">
+                            <section class="header">
+                                    Element Selector
+                            </section>
+                            <section class="code">
+                                <p>
+                                   h1 {
+                                        //SomeStyle 
+                                   }
+                                </p>
+                            </section>
+                            <section  class="example">
+                            </section>
+                            <section  class="description">
+                                    Style applies to all h1 html elements
+                            </section>
+                        </article>
+                        <article class="note">
+                            <section class="header">
+                                    Class Selector
+                            </section>
+                            <section class="code">
+                                <p>
+                                   .nodes {
+                                        //SomeStyle 
+                                   }
+                                </p>
+                            </section>
+                            <section  class="example">
+                            </section>
+                            <section  class="description">
+                                Style applies to elements, where class="nodes"
+                            </section>
+                        </article>
+                        <article class="note">
+                            <section class="header">
+                                    Universal Selector
+                            </section>
+                            <section class="code">
+                                <p>
+                                  *{
+                                      //Some Style
+                                  }
+                                </p>
+                            </section>
+                            <section  class="example">
+                            </section>
+                            <section  class="description">
+                                Rarely use this one, applies to all elements
+                            </section>
+                        </article>
+                        <article class="note">
+                            <section class="header">
+                                    ID Selector
+                            </section>
+                            <section class="code">
+                                <p>
+                                  #idname{
+                                      //Some Style
+                                  }
+                                </p>
+                            </section>
+                            <section  class="example">
+                            </section>
+                            <section  class="description">
+                                Style applies to elements, where id="idname"
+                            </section>
+                        </article>
+                        <article class="note">
+                            <section class="header">
+                                    Attributes Selector
+                            </section>
+                            <section class="code">
+                                <p>
+                                  [disabled]{
+                                      //Some Style
+                                  }
+                                </p>
+                            </section>
+                            <section  class="example">
+                            </section>
+                            <section  class="description">
+                                Style applies to elements, which are disabled
+                            </section>
+                        </article>
+            </div>
+            <div class="references"></div>
+        </section>
+    </article>
+</body>
+</html>

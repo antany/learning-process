@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap');
+
+body{
+    background-color: black;
+    color: aquamarine;
+    font-family: 'Antonio',sans-serif;
+}
+
+.page-title{
+    margin: auto;
+    text-align: center;
+}
+
+.chapters{
+    margin-left: 5%;
+}
+
+.topic h2{
+    
+}
+
+.notes{
+    margin-left: 5%;
+}
+
+.note{
+    display: inline-block;
+    width: 80%;
+}
+
+.header{
+    display: inline-block;
+    width: 20%;
+}
+
+.code{
+    display: inline-block;
+    width: 20%;
+}
+
+.example{
+    display: inline-block;
+    width: 20%;
+}
+
+.description{
+    display: inline-block;
+    width: 20%;
+}
